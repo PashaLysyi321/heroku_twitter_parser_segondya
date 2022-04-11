@@ -39,7 +39,7 @@ def download():
     df.drop(['author_id','entities','public_metrics','reply_settings'], axis=1, inplace=True)
     df = df[['id','created_at','text','lang','entities_list','like_count','retweet_count','reply_count','quote_count','source','possibly_sensitive']]
     df.to_excel("segodnya_twitter_"+str(ran)+".xlsx")
-    return flask.send_file("segodnya_tg_"+str(ran)+".xlsx", as_attachment=True)
+    return flask.send_file("segodnya_twitter_"+str(ran)+".xlsx", as_attachment=True)
 
 if __name__ == "__main__":
     app.run()
