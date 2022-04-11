@@ -16,8 +16,6 @@ pylint==2.6.0
 toml==0.10.1
 Werkzeug==1.0.1
 wrapt==1.12.1
-telethon
-asyncio
 datetime
 pandas
 openpyxl
