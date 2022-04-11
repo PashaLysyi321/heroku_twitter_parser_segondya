@@ -1,9 +1,5 @@
 import flask
 from flask import redirect, url_for, request
-from telethon import TelegramClient, functions, types
-from asyncio import run
-import asyncio
-from telethon.tl.functions.contacts import ResolveUsernameRequest
 from datetime import date, timedelta, datetime
 import pandas as pd
 import re
